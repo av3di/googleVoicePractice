@@ -10,7 +10,7 @@ $webhook = json_decode($body, true);
 $guesses = $webhook['result']['parameters']['pokemon'];
 $correct = false;
 foreach ($guesses as $pokemon_guess) {
-  if(strcasecmp($pokemon_guess, 'bulbasaur')) {
+  if(strcasecmp($pokemon_guess, 'bulbasaur') == 0) {
     // User guessed the correct pokemon
     $response->speech = "That's correct!";
     $response->displayText = "That's correct!";
