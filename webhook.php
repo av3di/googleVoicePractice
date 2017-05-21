@@ -1,4 +1,5 @@
 <?php
+echo "<p>Trying</p>";
 header('Content-type: application/json');
 
 // php://input contains raw data, POST can only handle simple key value
@@ -12,25 +13,18 @@ $correct = false;
 foreach ($guesses as $pokemon_guess) {
   if(strcasecmp($pokemon_guess, 'bulbasaur')) {
     // User guessed the correct pokemon
-    $response = {
-      "speech": "That's correct!",
-      "displayText": "That's correct!",
-      "data": {},
-      "contextOut": [],
-      "source": "beinspired"
-    }
+    $response->speech = "That's correct!";
+    $response->displayText = "That's correct!";
+    $response->source = "beinspired";
     $correct = true;
   }
 }
 
 // User guess the wrong pokemon
 if(!$correct){
-  $response = {
-    "speech": "Nope, guess again!",
-    "displayText": "Nope, guess again!",
-    "data": {},
-    "contextOut": [],
-    "source": "beinspired"
+    $response->speech = "Nope, guess again!";
+    $response->displayText =  "Nope, guess again!";
+    $response->source = "beinspired";
   }
 }
 
