@@ -4,7 +4,7 @@ A barebones PHP app that can easily be deployed to Heroku.
 It is a simple webhook that can be used to communicate with api.ai. Under the
 Fulfillment tab, make sure to link directly to webhook.php
 
-This application supports the [How to Deploy a Static Site to Heroku](http://blog.teamtreehouse.com/deploy-static-site-heroku) article - check it out.
+I used the [How to Deploy a Static Site to Heroku](http://blog.teamtreehouse.com/deploy-static-site-heroku) article to help build this project - check it out.
 
 ## Deploying
 
