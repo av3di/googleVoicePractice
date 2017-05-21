@@ -25,7 +25,6 @@ if(!$correct){
     $response->speech = "Nope, guess again!";
     $response->displayText =  "Nope, guess again!";
     $response->source = "beinspired";
-  }
 }
 
 exit(json_encode($response);
