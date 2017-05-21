@@ -27,5 +27,5 @@ if(!$correct){
     $response->source = "beinspired";
 }
 
-exit(json_encode($response);
+exit(json_encode($response));
 ?>
