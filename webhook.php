@@ -1,4 +1,6 @@
 <?php
+$msg = "test";
+mail("e_uribe2011@yahoo.com","This Happened",$msg);
 echo "<p>Trying</p>";
 header('Content-type: application/json');
 
@@ -26,7 +28,6 @@ if(!$correct){
     $response->displayText =  "Nope, guess again!";
     $response->source = "beinspired";
 }
-$msg = "test";
-mail("e_uribe2011@yahoo.com","This Happened",$msg);
+
 exit(json_encode($response));
 ?>
