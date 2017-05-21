@@ -1,4 +1,5 @@
 <?php
+ini_set("always_populate_raw_post_data", -1);
 header('Content-type: application/json');
 
 // php://input contains raw data, POST can only handle simple key value
