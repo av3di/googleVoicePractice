@@ -1,7 +1,4 @@
 <?php
-$msg = "test";
-mail("e_uribe2011@yahoo.com","This Happened",$msg);
-echo "<p>Trying</p>";
 header('Content-type: application/json');
 
 // php://input contains raw data, POST can only handle simple key value
@@ -13,5 +10,5 @@ $response->speech = "Nope, guess again!";
 $response->displayText =  "Nope, guess again!";
 $response->source = "beinspired";
 
-exit(json_encode($response));
+echo json_encode($response);
 ?>
